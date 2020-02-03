@@ -1,7 +1,6 @@
 @extends('layouts.admin')
 @section('content')
 
-
     <div class="row">
         <div class="col-md-12">
             <div class="card card-gray-dark">
@@ -13,8 +12,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <form action="{{route('users.store')}}" method="POST">
-                        @csrf
+                    <form action="{{  route('users.store')  }}" method="POST">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input name="name" type="text" class="form-control" id="name" placeholder="Enter Your Name">
@@ -38,6 +36,7 @@
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary" id="submit">Create</button>
+                        @csrf
                     </form>
                 </div>
             </div>

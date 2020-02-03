@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63e7427a-ce4d-40eb-bbbf-23ecb6915fda" name="Default Changelist" comment="" />
+    <list default="true" id="63e7427a-ce4d-40eb-bbbf-23ecb6915fda" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/../app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/Http/Requests/StoreUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/../app/Http/Requests/StoreUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/../app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database/seeds/UserTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/../database/seeds/UserTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/views/userview/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/views/userview/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/views/userview/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/views/userview/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resources/views/userview/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../resources/views/userview/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +38,16 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\sites\admin\.idea" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -114,6 +136,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1XHkNbKSId1wMhja9B54SHQhVHs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -127,12 +150,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\sites\admin\resources\views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\sites\admin\public" />
       <recent name="E:\sites\admin\resources\views\layouts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\sites\admin\resources\views" />
     </key>
   </component>
   <component name="RunManager">
@@ -164,7 +187,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580710371505</updated>
       <workItem from="1580710383034" duration="8941000" />
-      <workItem from="1580719426663" duration="9416000" />
+      <workItem from="1580719426663" duration="17090000" />
     </task>
     <servers />
   </component>
@@ -192,9 +215,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580730440185" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580732094649">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1580737392476">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580732094649" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580737392476" />
   </component>
 </project>

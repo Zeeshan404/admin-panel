@@ -3,13 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUser;
-use App\Role;
 use App\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('checkpermission')->only('edit');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -38,10 +41,9 @@ class UserController extends Controller
      */
     public function store(StoreUser $request)
     {
-        dd("sasd");
         $data = $request->validated();
         $data['password'] = Hash::make($data['password']); //hashing password
-        $user = User::create($data);
+        User::create($data);
         return redirect()->route('users.index');
     }
 
@@ -64,6 +66,7 @@ class UserController extends Controller
      */
     public function edit($id)
     {
+
         $user = User::find($id);
         return view('userview.edit')->with('user', $user);
     }
@@ -81,8 +84,6 @@ class UserController extends Controller
         $data['password'] = Hash::make($data['password']); //hashing password
         $user = User::find($id);
         $user->update($data);
-        $data['user_id'] = auth()->user()->id;
-        $user->role()->update($data);
         return redirect()->route('users.index');
 
     }
@@ -96,7 +97,6 @@ class UserController extends Controller
     public function destroy($id)
     {
         $user = User::find($id);
-        $user->role->delete();
         $user->delete();
         return redirect()->route('users.index');
 

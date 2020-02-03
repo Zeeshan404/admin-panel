@@ -25,7 +25,10 @@
                             <th scope="col">Email</th>
                             <th scope="col">Current Role</th>
                             <th scope="col">Editing</th>
-                            <th scope="col">Deleting</th>
+                            @if(auth()->user()->role->rolename =='superadmin')
+                                <th scope="col">Deleting</th>
+                            @endif
+
                         </tr>
                         </thead>
                         <tbody>
@@ -39,13 +42,15 @@
                                     <a href="{{  route('users.edit', ['user'=>$user->id] )  }}"
                                        class="btn btn-info btn-sm">Edit</a>
                                 </td>
-                                <td>
-                                    <form action="{{  route('users.destroy', ['user'=>$user->id]) }}" method="POST">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button class="btn btn-danger btn-sm">Delete</button>
-                                    </form>
-                                </td>
+                                @if(auth()->user()->role->rolename =='superadmin')
+                                    <td>
+                                        <form action="{{  route('users.destroy', ['user'=>$user->id]) }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+                                    </td>
+                                @endif
                             </tr>
                         @endforeach
                         </tbody>
